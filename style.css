@@ -1,0 +1,709 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-family: Lato, sans-serif;
+    --res: calc(0.01 * 18vmin);
+    --res-height: calc(0.01 * 100vmin);
+}
+
+a {
+    text-decoration: none;
+    color: whitesmoke;
+}
+
+
+.container-nav {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.nav-contact {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 100%;
+    height: 2rem;
+    background-color: #0e0e0e;
+}
+
+.nav-contact p {
+    color: whitesmoke;
+}
+
+
+.header-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar-logo {
+    display: flex;
+    justify-content: center;
+}
+
+.background-header {
+    background-image: url("assets/Ressources/mecanicien-reparant-moteur-voiture-outil-cle-genere-par-ia.jpg");
+    background-position: center;
+    background-size: cover;
+    filter: contrast(110%);
+}
+
+.header-container {
+    width: 100%;
+    height: 80vh;
+}
+
+#nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50px;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.navbar-responsive {
+    display: none;
+}
+
+.nav-menu {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 80%;
+}
+
+.nav-menu a {
+    margin: 0 20px;
+    text-transform: uppercase;
+}
+
+.active-color {
+    color: #ffae00;
+}
+
+.header-title {
+    display: flex;
+    height: 60%;
+}
+
+.header-title-content {
+    display: flex;
+    text-align: center;
+    width: 100%;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header-title-content h1, .header-title-content h3 {
+    color: whitesmoke;
+    margin: 15px 0;
+}
+
+.header-title-content h1 {
+    font-size: calc(50 * var(--res));
+}
+
+.header-title-content h1 span {
+    color: #ffae00;
+}
+
+.header-title-content h3 {
+    font-size: calc(18.72 * var(--res));
+    text-transform: uppercase;
+    font-weight: normal;
+}
+
+#header-img-1 {
+    background-image: url("assets/Ressources/voiture-dans-parking.jpg");
+}
+
+#header-img-2 {
+    background-image: url("assets/Ressources/38.png");
+}
+
+#header-img-3 {
+    background-image: url("assets/Ressources/33.png");
+}
+
+#header-img-4 {
+    background-image: url("assets/Ressources/entrepreneur-travaillant-factures.jpg");
+}
+
+.test {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card-header {
+    display: flex;
+    justify-content: center;
+    margin: 10px 20px;
+    transform: translate(0, -50%);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    background-size: 250%;
+    background-position: 20% 50%;
+    background-repeat: no-repeat;
+    object-fit: contain;
+    width: 250px;
+    height: 325px;
+}
+
+.filter-background-img-header {
+    background-color: rgba(92, 19, 136, 0.74);
+    position: relative;
+    height: 100%;
+}
+
+.content-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.content-card-img {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    width: auto;
+}
+
+.content-card-img img {
+    color: white;
+    width: 60px;
+}
+
+.content-card-img h2 {
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.content-card-img button {
+    cursor: pointer;
+    background: transparent;
+    width: 200px;
+    padding: 10px;
+    border: 2px solid whitesmoke;
+    color: whitesmoke;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.header-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    transform: translate(0, -60%);
+}
+
+.header-p-info {
+    width: 55%;
+}
+
+.header-b-info {
+    display: flex;
+    justify-content: center;
+    margin: 40px 20px;
+}
+
+.header-b-info button {
+    cursor: pointer;
+    background: transparent;
+    width: 200px;
+    padding: 10px;
+    border: 4px solid #5C1388;
+    color: #5C1388;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 0 10px;
+}
+
+.header-b-info button:hover {
+    cursor: pointer;
+    background: #5C1388FF;
+    border: 4px solid #5C1388;
+    color: whitesmoke;
+
+}
+
+section .contact-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-image: url("assets/Ressources/deux-voitures-se-soulevant-dans-entretien-station-service-garage.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.background-contact {
+    background-color: rgba(255, 174, 0, 0.70);
+    width: 100%;
+    height: 100%;
+    padding: 50px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+
+.contact-content-b {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-content h2 {
+    font-size: 30px;
+}
+
+.contact-content h2, .contact-content p {
+    color: whitesmoke;
+    text-align: center;
+}
+
+.contact-content hr {
+    width: 10%;
+    border: 2px solid whitesmoke;
+    margin: 40px;
+}
+
+.contact-content p {
+    width: 50%;
+}
+
+.h2-contact {
+    margin: 60px 0;
+}
+
+.contact-content-b button {
+    cursor: pointer;
+    background-color: whitesmoke;
+    color: #ffae00;
+    border: 0;
+    padding: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+.container-card-vehicules {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.container-card-vehicules-title {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.container-card-vehicules-title h1 {
+    font-size: 40px;
+}
+
+.container-card-vehicules-title h1 span {
+    color: #5D138C;
+}
+
+.container-card-vehicules-info {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: auto;
+}
+
+.container-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+}
+
+.card-vehicules {
+    display: flex;
+    flex-direction: column;
+    overflow-wrap: break-word;
+    margin: 30px;
+    width: 300px;
+    height: 450px;
+}
+
+#card-vehicules-1 {
+    background-image: url("assets/Ressources/IMG_0889.jpg");
+}
+
+#card-vehicules-2 {
+    background-image: url("assets/Ressources/W102815503_STANDARD_0.jpg");
+}
+
+#card-vehicules-3 {
+    background-image: url("assets/Ressources/W102785673_STANDARD_0.jpg");
+}
+
+#card-vehicules-4 {
+    background-image: url("assets/Ressources/W102629770_STANDARD_0.jpg");
+}
+
+#card-vehicules-5 {
+    background-image: url("assets/Ressources/IMG_0889.jpg");
+}
+
+#card-vehicules-6 {
+    background-image: url("assets/Ressources/W102785673_STANDARD_0.jpg");
+}
+
+#card-vehicules-7 {
+    background-image: url("assets/Ressources/E112914157_STANDARD_0.jpg");
+}
+
+#card-vehicules-8 {
+    background-image: url("assets/Ressources/W102815503_STANDARD_0.jpg");
+}
+
+
+.card-vehicules-img {
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 55%;
+}
+
+.card-vehicules-img-prix {
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.card-vehicules-img-prix-content {
+    display: flex;
+    justify-content: end;
+    align-items: end;
+    height: 35px;
+    border-bottom: 4px solid #5D138C;
+}
+
+.card-vehicules-img-prix-content-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+    background-color: #5D138C;
+    height: 100%;
+    width: 35%;
+
+}
+
+.card-vehicules-img-prix-content-info p {
+    margin-top: 4px;
+}
+
+.card-vehicules-info {
+    display: flex;
+    flex-direction: column;
+    height: 45%;
+    background-color: #ECECEC;
+}
+
+.card-vehicules-info-title {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    padding: 10px;
+    height: auto;
+}
+
+.card-vehicules-info-title h4 {
+    margin-bottom: 5px;
+    font-weight: bold;
+
+}
+
+.card-vehicules-info-title h3 {
+    font-weight: normal;
+}
+
+.card-vehicules-info-p {
+    padding: 10px;
+}
+
+.card-vehicules-info-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.card-vehicules-info-button button {
+    border: none;
+    background-color: transparent;
+}
+
+.card-vehicules-info-button button a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #5D138C;
+    border: none;
+}
+
+.container-card-vehicules-button {
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+}
+
+.container-card-vehicules-button button {
+    border: none;
+    background-color: transparent;
+}
+
+.container-card-vehicules-button button a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #5D138C;
+    padding: 15px 40px;
+    border: 4px solid #5D138C;
+    text-transform: uppercase;
+}
+
+.container-carte {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    width: 100%;
+    z-index: 2;
+    margin-top: 50px;
+}
+
+.container-carte iframe {
+    position: absolute;
+}
+
+.carte-info {
+    display: flex;
+    z-index: 2;
+    width: 450px;
+    height: 712px;
+    background-color: rgba(0, 0, 0, 0.74);
+    margin: 0 40% 0 0;
+}
+
+.carte-content {
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    width: 100%;
+    height: 100%;
+}
+
+
+.carte-content-hr {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+}
+
+.carte-content-hr hr {
+    width: 100%;
+}
+
+.carte-info-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding: 20px;
+    flex: 0.5;
+    color: whitesmoke;
+}
+
+.carte-info-content button {
+    margin-top: 15px;
+    padding: 15px;
+    background: transparent;
+    border: 4px solid whitesmoke;
+}
+
+.carte-info-content button a {
+    background: transparent;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: whitesmoke;
+}
+
+.carte-info-content-margin {
+    text-align: center;
+}
+
+.carte-info-contact p {
+    font-size: 20px;
+    margin-top: 45px;
+}
+
+.carte-info-horaires h2 {
+    margin-bottom: 45px;
+}
+
+.carte-info-horaires p {
+    font-size: 20px;
+}
+
+
+#footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: center;
+    width: 100%;
+    height: 200px;
+    background-color: #272727;
+    color: whitesmoke;
+}
+
+@media screen and (max-width: 1400px) {
+
+    #nav {
+        background: #000;
+        opacity: 1;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+
+    .navbar-responsive {
+        display: flex;
+        position: relative;
+        justify-content: end;
+        height: max-content;
+        width: 100%;
+    }
+
+    .hamburger {
+        display: flex;
+        flex-direction: column;
+        margin: 10px;
+        align-items: end;
+        position: absolute;
+        z-index: 1;
+        width: 100%;
+    }
+
+    .hamburger-label {
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        height: 50vh;
+    }
+
+
+    .hamburger-label span {
+        display: none;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .hamburger-label span a {
+        color: white;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+
+    .header-info {
+        transform: translate(0, -20%);
+    }
+
+    .header-b-info {
+        flex-direction: column;
+    }
+
+    .header-b-info button {
+        margin: 10px 0;
+    }
+
+    section .contact-container {
+        height: calc(70vh * var(--res));
+    }
+
+    .header-p-info {
+        width: 70%;
+    }
+
+    .contact-content p {
+        width: 100%;
+    }
+
+
+    .card-vehicules-info-button button {
+        padding: 20px;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .nav-contact {
+        flex-direction: column;
+        height: 4rem;
+        text-align: center;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    .carte-info {
+        margin: 0;
+    }
+}
+
+
+@media screen and (max-width: 500px) {
+    .container-card {
+        width: 100%;
+    }
+
+    .card-vehicules {
+        width: 300px;
+        height: 500px;
+    }
+}
